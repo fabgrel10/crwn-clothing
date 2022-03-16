@@ -1,0 +1,63 @@
+{
+  "name": "starter-create-react-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.jsx",
+    "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.jsx",
+    "lint:stylelint": "stylelint --ignore-path .gitignore ./src/**/*.{css,jsx}",
+    "fix:stylelint": "stylelint --fix --ignore-path .gitignore ./src/**/*.{css,jsx}",
+    "lint:prettier": "prettier --check --ignore-path .gitignore \"!package-lock.json\" './**/*.{js,jsx,json,css}'",
+    "fix:prettier": "prettier --write --ignore-path .gitignore \"!package-lock.json\" './**/*.{js,jsx,json,css}'",
+    "lint:all": "run-s lint:eslint lint:stylelint lint:prettier",
+    "fix:all": "run-s fix:eslint fix:stylelint fix:prettier"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "sanitize.css": "^13.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@stylelint/postcss-css-in-js": "^0.37.2",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-syntax": "^0.36.2",
+    "prettier": "^2.5.1",
+    "prettier-plugin-organize-imports": "^2.3.4",
+    "prettier-plugin-style-order": "^0.2.2",
+    "stylelint": "^14.5.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "webpack": "^5.70.0"
+  }
+}
