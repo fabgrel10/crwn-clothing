@@ -1,86 +1,94 @@
-# starter-create-react-app
+# CRWN Clothing
 
-## 開発モードでアプリを実行
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 
-開発モードでアプリを実行します。  
-[http://localhost:3000](http://localhost:3000) を開くと、ブラウザで表示されます。
+> E-commerce app created with React, Redux and Firebase authentication.
 
-変更するとページが再読み込みされます。  
-また、コンソールに lint エラーが表示される場合があります。
+![screenshot](./src/assets/images/app_screenshot.png)
 
-```bash
-npm start
-```
+## Table of Contents
 
-## テストランナーを対話型ウォッチモードで起動
+- [Description](#description)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Setup](#setup)
+- [Scripts](#scripts)
+  - [Start dev server](#start-dev-server)
+  - [Build for production](#Build-for-production)
+  - [Locally preview production build](#Locally-preview-production-build)
+- [Show Your Support](#how-your-support)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
 
-テストランナーを対話型ウォッチモードで起動します。  
-詳しくは、[テストの実行](https://facebook.github.io/create-react-app/docs/running-tests)の項を参照してください。
+## Description
 
-```bash
-npm test
-```
+E-commerce app created with React, Redux and Firebase authentication.
 
-## 本番用アプリをビルド
+## Live Demo
 
-```bash
-npm run build
-```
+Coming soon ...
 
-本番用アプリを `build` フォルダにビルドします。
+## Built With
 
-詳細は、[deployment](https://facebook.github.io/create-react-app/docs/deployment)のセクションを参照してください。
+- [Create React App](https://create-react-app.dev/) Set up a modern web app by running one command.
+- [React Router](https://reactrouter.com/) A declarative library for building single page applications.
+- [Redux](https://redux-toolkit.js.org/) The official, opinionated, batteries-included toolset for efficient Redux development.
 
-## Storybook
+## Getting Started
 
-storybook を起動します。
+To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run storybook
-```
+### Prerequisites
 
-## `npm run eject`
+- `node` : `^12 || >=14`
+- `npm` or `yarn`
 
-```bash
-npm run eject
-```
+### Setup
 
-**注意：これは一方的な操作です。一度 `eject` したら、もう戻れません！**。
+1. Download or fork this project
+2. Extract the content to a new directory, rename it and cd the directory.
+3. Install all dependencies using:
 
-もし、ビルドツールや設定の選択に満足できない場合は、いつでも `eject` することができます。このコマンドを実行すると、ビルドの依存関係が 1 つだけプロジェクトから取り除かれます。
+- `npm install` or `yarn`
 
-その代わり、すべての設定ファイルと依存関係(webpack, Babel, ESLint など)をプロジェクトにコピーするので、それらを完全に制御することができます。eject` 以外のコマンドはまだ動作しますが、コピーされたスクリプトを指すので、それらを調整することができます。この時点で、あなたは自分自身で行動することになります。
+## Scripts
 
-eject` を使う必要はありません。キュレーションされた機能セットは小規模から中規模のデプロイメントに適しており、この機能を使うことを義務に感じるべきではありません。しかし、もしあなたがその気になったときにカスタマイズできないのであれば、このツールは有用ではないことを私たちは理解しています。
+### Start dev server
 
-## 参考資料
+- `npm start` or `yarn start` and open the browser at `http://localhost:3000`
 
-## Learn More
+### Build for production
 
-Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)で詳しく解説しています。
+- `npm run build` or `yarn run build`
 
-React を学ぶには、[React documentation](https://reactjs.org/)を参照してください。
+### Locally preview production build
 
-### コードの分割
+After creating the production build, run:
 
-このセクションはこちらに移動しました。[https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm run preview` or `yarn run preview` and open the browser at `http://localhost:5000`
 
-### バンドルサイズの解析
+## Connect With Me
 
-このセクションはこちらに移動しました。[https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- 👤 **Fabricio** -->
 
-### プログレッシブウェブアプリの作成
+| &nbsp;       | &nbsp;                                               |
+| ------------ | ---------------------------------------------------- |
+| **GitHub**   | [@fabgrel10](https://github.com/fabgrel10)           |
+| **Twitter**  | [@fabgrel10](https://twitter.com/fabgrel10)          |
+| **LinkedIn** | [@fabgrel10](https://www.linkedin.com/in/fabgrel10/) |
 
-このセクションはこちらに移動しました。[https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Show your support
 
-### 高度な設定
+Give a ⭐️ if you like this project!
 
-このセクションはこちらに移動しました。[https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgments
 
-### デプロイメント
+Coming soon ...
 
-このセクションはこちらに移動しました。[https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` がミニファイに失敗する
-
-このセクションはこちらに移動しました。[https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
