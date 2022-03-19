@@ -1,5 +1,6 @@
 # CRWN Clothing
 
+![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge)
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
@@ -34,7 +35,7 @@ Coming soon ...
 
 ## Built With
 
-- [Create React App](https://create-react-app.dev/) Set up a modern web app by running one command.
+- [Vite](https://vitejs.dev/) Next generation frontend tooling.
 - [React Router](https://reactrouter.com/) A declarative library for building single page applications.
 - [Redux](https://redux-toolkit.js.org/) The official, opinionated, batteries-included toolset for efficient Redux development.
 
