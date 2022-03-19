@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
 
+import './CategoryItem.scss';
+
 const CategoryItem = ({ category }) => {
   const { id, imageUrl, title } = category;
 
   return (
-    <div key={id} className="category-container">
+    <div key={id} className='category-container'>
       <div
-        className="background-image"
+        className='background-image'
         style={{ backgroundImage: `url(${imageUrl})` }}
       />
-      <div className="category-body-container">
+      <div className='category-body-container'>
         <h2>{title}</h2>
         <p>Shop Now</p>
       </div>
@@ -21,8 +23,8 @@ CategoryItem.propTypes = {
   category: PropTypes.shape({
     id: PropTypes.number,
     imageUrl: PropTypes.string,
-    title: PropTypes.string,
-  }).isRequired,
+    title: PropTypes.string
+  }).isRequired
 };
 
 export default CategoryItem;
