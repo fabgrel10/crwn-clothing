@@ -37,6 +37,7 @@
     "@emotion/babel-plugin": "^11.7.2",
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/styled": "^11.8.1",
+    "@namics/stylelint-bem": "^7.0.0",
     "@stylelint/postcss-css-in-js": "^0.37.2",
     "@testing-library/dom": "^8.11.3",
     "@testing-library/jest-dom": "^5.16.2",
@@ -67,12 +68,11 @@
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-scss": "^4.2.0",
-    "stylelint-selector-bem-pattern": "^2.1.1",
     "tailwindcss": "^3.0.23",
     "typescript": "^4.6.2",
     "vite": "^2.8.6",
+    "vite-plugin-svgr": "^1.0.1",
     "webpack": "^5.70.0"
   }
 }

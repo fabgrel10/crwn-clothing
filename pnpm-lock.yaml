@@ -6,6 +6,7 @@ specifiers:
   '@emotion/babel-preset-css-prop': ^11.2.0
   '@emotion/react': ^11.8.2
   '@emotion/styled': ^11.8.1
+  '@namics/stylelint-bem': ^7.0.0
   '@stylelint/postcss-css-in-js': ^0.37.2
   '@testing-library/dom': ^8.11.3
   '@testing-library/jest-dom': ^5.16.2
@@ -42,12 +43,11 @@ specifiers:
   stylelint-config-idiomatic-order: ^8.1.0
   stylelint-config-prettier-scss: ^0.0.1
   stylelint-config-standard-scss: ^3.0.0
-  stylelint-declaration-block-no-ignored-properties: ^2.5.0
   stylelint-scss: ^4.2.0
-  stylelint-selector-bem-pattern: ^2.1.1
   tailwindcss: ^3.0.23
   typescript: ^4.6.2
   vite: ^2.8.6
+  vite-plugin-svgr: ^1.0.1
   webpack: ^5.70.0
 
 dependencies:
@@ -64,6 +64,7 @@ devDependencies:
   '@emotion/babel-plugin': 11.7.2_@babel+core@7.17.8
   '@emotion/babel-preset-css-prop': 11.2.0_@babel+core@7.17.8
   '@emotion/styled': 11.8.1_58c6d579b5d4620c3e3267b14eb7ebcf
+  '@namics/stylelint-bem': 7.0.0_stylelint@14.6.0
   '@stylelint/postcss-css-in-js': 0.37.2_3c2bfa735c5d8a8695ad877879a67022
   '@testing-library/dom': 8.11.3
   '@testing-library/jest-dom': 5.16.2
@@ -94,12 +95,11 @@ devDependencies:
   stylelint-config-idiomatic-order: 8.1.0_stylelint@14.6.0
   stylelint-config-prettier-scss: 0.0.1_stylelint@14.6.0
   stylelint-config-standard-scss: 3.0.0_postcss@8.4.12+stylelint@14.6.0
-  stylelint-declaration-block-no-ignored-properties: 2.5.0_stylelint@14.6.0
   stylelint-scss: 4.2.0_stylelint@14.6.0
-  stylelint-selector-bem-pattern: 2.1.1
   tailwindcss: 3.0.23_autoprefixer@10.4.4
   typescript: 4.6.2
   vite: 2.8.6_sass@1.49.9
+  vite-plugin-svgr: 1.0.1_vite@2.8.6
   webpack: 5.70.0
 
 packages:
@@ -888,6 +888,17 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.11
     dev: true
 
+  /@namics/stylelint-bem/7.0.0_stylelint@14.6.0:
+    resolution: {integrity: sha512-XimlWZbCotBQbwB5YwcB5d7HNhoY4YBWyfoMbDcEuUWOCEmXDbfwsSDJR+cytm+/Z+lDVRnHd+iM01AaF0+R4A==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      stylelint: '>=7.0.0 <15.0.0'
+    dependencies:
+      css-selector-classes: 0.1.2
+      postcss-resolve-nested-selector: 0.1.1
+      stylelint: 14.6.0
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -938,6 +949,129 @@ packages:
       '@babel/core': 7.17.8
       postcss: 8.4.12
       postcss-syntax: 0.36.2_postcss@8.4.12
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@svgr/babel-plugin-add-jsx-attribute/6.0.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-MdPdhdWLtQsjd29Wa4pABdhWbaRMACdM1h31BY+c6FghTZqNGT7pEYdBoaGeKtdTOBC/XNFQaKVj+r/Ei2ryWA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+    dev: true
+
+  /@svgr/babel-plugin-remove-jsx-attribute/6.0.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-aVdtfx9jlaaxc3unA6l+M9YRnKIZjOhQPthLKqmTXC8UVkBLDRGwPKo+r8n3VZN8B34+yVajzPTZ+ptTSuZZCw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+    dev: true
+
+  /@svgr/babel-plugin-remove-jsx-empty-expression/6.0.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-Ccj42ApsePD451AZJJf1QzTD1B/BOU392URJTeXFxSK709i0KUsGtbwyiqsKu7vsYxpTM0IA5clAKDyf9RCZyA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+    dev: true
+
+  /@svgr/babel-plugin-replace-jsx-attribute-value/6.0.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-88V26WGyt1Sfd1emBYmBJRWMmgarrExpKNVmI9vVozha4kqs6FzQJ/Kp5+EYli1apgX44518/0+t9+NU36lThQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+    dev: true
+
+  /@svgr/babel-plugin-svg-dynamic-title/6.0.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-F7YXNLfGze+xv0KMQxrl2vkNbI9kzT9oDK55/kUuymh1ACyXkMV+VZWX1zEhSTfEKh7VkHVZGmVtHg8eTZ6PRg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+    dev: true
+
+  /@svgr/babel-plugin-svg-em-dimensions/6.0.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-+rghFXxdIqJNLQK08kwPBD3Z22/0b2tEZ9lKiL/yTfuyj1wW8HUXu4bo/XkogATIYuXSghVQOOCwURXzHGKyZA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+    dev: true
+
+  /@svgr/babel-plugin-transform-react-native-svg/6.0.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-VaphyHZ+xIKv5v0K0HCzyfAaLhPGJXSk2HkpYfXIOKb7DjLBv0soHDxNv6X0vr2titsxE7klb++u7iOf7TSrFQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+    dev: true
+
+  /@svgr/babel-plugin-transform-svg-component/6.2.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-bhYIpsORb++wpsp91fymbFkf09Z/YEKR0DnFjxvN+8JHeCUD2unnh18jIMKnDJTWtvpTaGYPXELVe4OOzFI0xg==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+    dev: true
+
+  /@svgr/babel-preset/6.2.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-4WQNY0J71JIaL03DRn0vLiz87JXx0b9dYm2aA8XHlQJQoixMl4r/soYHm8dsaJZ3jWtkCiOYy48dp9izvXhDkQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+      '@svgr/babel-plugin-add-jsx-attribute': 6.0.0_@babel+core@7.17.8
+      '@svgr/babel-plugin-remove-jsx-attribute': 6.0.0_@babel+core@7.17.8
+      '@svgr/babel-plugin-remove-jsx-empty-expression': 6.0.0_@babel+core@7.17.8
+      '@svgr/babel-plugin-replace-jsx-attribute-value': 6.0.0_@babel+core@7.17.8
+      '@svgr/babel-plugin-svg-dynamic-title': 6.0.0_@babel+core@7.17.8
+      '@svgr/babel-plugin-svg-em-dimensions': 6.0.0_@babel+core@7.17.8
+      '@svgr/babel-plugin-transform-react-native-svg': 6.0.0_@babel+core@7.17.8
+      '@svgr/babel-plugin-transform-svg-component': 6.2.0_@babel+core@7.17.8
+    dev: true
+
+  /@svgr/core/6.2.1:
+    resolution: {integrity: sha512-NWufjGI2WUyrg46mKuySfviEJ6IxHUOm/8a3Ph38VCWSp+83HBraCQrpEM3F3dB6LBs5x8OElS8h3C0oOJaJAA==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@svgr/plugin-jsx': 6.2.1_@svgr+core@6.2.1
+      camelcase: 6.3.0
+      cosmiconfig: 7.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@svgr/hast-util-to-babel-ast/6.2.1:
+    resolution: {integrity: sha512-pt7MMkQFDlWJVy9ULJ1h+hZBDGFfSCwlBNW1HkLnVi7jUhyEXUaGYWi1x6bM2IXuAR9l265khBT4Av4lPmaNLQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@babel/types': 7.17.0
+      entities: 3.0.1
+    dev: true
+
+  /@svgr/plugin-jsx/6.2.1_@svgr+core@6.2.1:
+    resolution: {integrity: sha512-u+MpjTsLaKo6r3pHeeSVsh9hmGRag2L7VzApWIaS8imNguqoUwDq/u6U/NDmYs/KAsrmtBjOEaAAPbwNGXXp1g==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@svgr/core': ^6.0.0
+    dependencies:
+      '@babel/core': 7.17.8
+      '@svgr/babel-preset': 6.2.0_@babel+core@7.17.8
+      '@svgr/core': 6.2.1
+      '@svgr/hast-util-to-babel-ast': 6.2.1
+      svg-parser: 2.0.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1535,6 +1669,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /array-uniq/1.0.3:
+    resolution: {integrity: sha1-r2rId6Jcx/dOBYiUdThY39sk/bY=}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /array.prototype.flat/1.2.5:
     resolution: {integrity: sha512-KaYU+S+ndVqyUnignHftkwc58o3uVU1jzczILJ1tN2YaIZpFIKBiP/x/j97E5MVPsaCloPbqWLB/8qCTVvT2qg==}
     engines: {node: '>= 0.4'}
@@ -1962,6 +2101,19 @@ packages:
     engines: {node: '>=12.22'}
     dev: true
 
+  /css-selector-classes/0.1.2:
+    resolution: {integrity: sha1-JAPY5WAQHIKcXx35MIAyp6Qfw3Y=}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      array-uniq: 1.0.3
+      css-selector-parser: 1.0.4
+    dev: true
+
+  /css-selector-parser/1.0.4:
+    resolution: {integrity: sha1-Zd/mFL1f0XW2Sgo/GTuHD8V5B3M=}
+    engines: {'0': node >= 0.4.0}
+    dev: true
+
   /css.escape/1.5.1:
     resolution: {integrity: sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=}
     dev: true
@@ -2174,6 +2326,11 @@ packages:
     dependencies:
       graceful-fs: 4.2.9
       tapable: 2.2.1
+    dev: true
+
+  /entities/3.0.1:
+    resolution: {integrity: sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==}
+    engines: {node: '>=0.12'}
     dev: true
 
   /error-ex/1.3.2:
@@ -4473,14 +4630,6 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /postcss-bem-linter/3.3.0:
-    resolution: {integrity: sha512-qfgbgf6JmSpJEdglPOsx6GXkQg+dyHRGkflFoACZYL1dVFqoN5O3KhynuCvZFZ1DVfCFCuqEFgnwn8AyN+4qeQ==}
-    dependencies:
-      minimatch: 3.1.2
-      postcss: 7.0.39
-      postcss-resolve-nested-selector: 0.1.1
-    dev: true
-
   /postcss-js/4.0.0_postcss@8.4.12:
     resolution: {integrity: sha512-77QESFBwgX4irogGVPgQ5s07vLvFqWr228qZY+w6lW599cRlK/HmnlivnnVUxkjHnCu4J16PDMHcH+e+2HbvTQ==}
     engines: {node: ^12 || ^14 || >= 16}
@@ -5220,15 +5369,6 @@ packages:
       stylelint-config-recommended: 6.0.0_stylelint@14.6.0
     dev: true
 
-  /stylelint-declaration-block-no-ignored-properties/2.5.0_stylelint@14.6.0:
-    resolution: {integrity: sha512-UNz5nUC5GMgMb6GPc/pHUTC0+ydxTdj2mUn7XcKRdwQoiUzzUmWWdSf1aFv2UzrW4x8JYNReE1u5JOj7g0ThJw==}
-    engines: {node: '>=6'}
-    peerDependencies:
-      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0
-    dependencies:
-      stylelint: 14.6.0
-    dev: true
-
   /stylelint-order/3.1.1_stylelint@14.6.0:
     resolution: {integrity: sha512-4gP/r8j/6JGZ/LL41b2sYtQqfwZl4VSqTp7WeIwI67v/OXNQ08dnn64BGXNwAUSgb2+YIvIOxQaMzqMyQMzoyQ==}
     engines: {node: '>=8.7.0'}
@@ -5252,17 +5392,6 @@ packages:
       postcss-selector-parser: 6.0.9
       postcss-value-parser: 4.2.0
       stylelint: 14.6.0
-    dev: true
-
-  /stylelint-selector-bem-pattern/2.1.1:
-    resolution: {integrity: sha512-zLaK/aMwUqLxR86CpFNsfelwCTdDw3kdtWbtAKEch6bpOQvYvKmFFfvMRCGjeKwylWgTRRrZA11okZw5WK0IOw==}
-    dependencies:
-      lodash: 4.17.21
-      postcss: 8.4.12
-      postcss-bem-linter: 3.3.0
-      stylelint: 14.6.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /stylelint/14.6.0:
@@ -5349,6 +5478,10 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  /svg-parser/2.0.4:
+    resolution: {integrity: sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ==}
+    dev: true
 
   /svg-tags/1.0.0:
     resolution: {integrity: sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=}
@@ -5623,6 +5756,17 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /vite-plugin-svgr/1.0.1_vite@2.8.6:
+    resolution: {integrity: sha512-7jHIC2Bi83KRwBB/b5FLcQdqWfzOSDVy7BtE9g4GXoY1axTZRKeqyWMEK3LCySQ70+BSYFtoSwHJaNLeqxjYlg==}
+    peerDependencies:
+      vite: ^2.6.0
+    dependencies:
+      '@svgr/core': 6.2.1
+      vite: 2.8.6_sass@1.49.9
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /vite/2.8.6_sass@1.49.9:
