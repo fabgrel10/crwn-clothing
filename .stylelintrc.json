@@ -1,6 +1,7 @@
 {
   "plugins": [
     "stylelint-scss",
+    "stylelint-selector-bem-pattern",
     "stylelint-declaration-block-no-ignored-properties"
   ],
   "extends": [
@@ -9,6 +10,15 @@
     "stylelint-config-prettier-scss"
   ],
   "rules": {
+    "declaration-block-no-ignored-properties": true,
+    "plugin/selector-bem-pattern": {
+      "componentName": "[A-Z]+",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "combined": "^\\.combined-{componentName}-[a-z]+$"
+      },
+      "utilitySelectors": "^\\.util-[a-z]+$"
+    },
     "scss/at-rule-no-unknown": [
       true,
       {
