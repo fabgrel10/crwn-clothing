@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
 import { ReactComponent as CrwnLogo } from '../../assets/images/crown.svg';
-
 import './Navbar.scss';
 
 const Navbar = () => (
@@ -14,6 +13,9 @@ const Navbar = () => (
       <div className="navbar__links">
         <Link className="navbar__link" to="/">
           Home
+        </Link>
+        <Link className="navbar__link" to="/sign-in">
+          Sign In
         </Link>
       </div>
     </div>
