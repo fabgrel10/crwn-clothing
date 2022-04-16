@@ -19,6 +19,11 @@ const SignUpForm = () => {
     setFormFields({ ...formFields, [name]: value });
   };
 
+  const handleSubmit = event => {
+    event.preventDefault();
+
+  };
+
   return (
     <form onSubmit={() => {}}>
       <label htmlFor="name">
