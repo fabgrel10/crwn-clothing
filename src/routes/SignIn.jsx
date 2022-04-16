@@ -1,7 +1,7 @@
 import SignUpForm from '../components/SignUpForm/SignUpForm';
 import {
   createUserDocumentFromAuth,
-  signInWithGooglePopup
+  signInWithGooglePopup,
 } from '../utils/firebase';
 
 const SignIn = () => {
