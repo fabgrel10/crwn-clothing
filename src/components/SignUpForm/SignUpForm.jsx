@@ -2,8 +2,10 @@ import { useState } from 'react';
 
 import {
   createAuthUserWithEmailAndPassword,
-  createUserDocumentFromAuth
+  createUserDocumentFromAuth,
+  signInWithGooglePopup
 } from '../../utils/firebase';
+import Button from '../Button/Button';
 import FormInput from '../FormInput/FormInput';
 import './SignUpForm.scss';
 
@@ -55,7 +57,7 @@ const SignUpForm = () => {
 
   return (
     <div className="sign-up-container">
-      <h2>Already have an account?</h2>
+      <h2>Don't have an account?</h2>
       <span>Sign in with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -90,7 +92,7 @@ const SignUpForm = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <button type="submit">Sign Up</button>
+        <Button type="submit">Sign Up</Button>
       </form>
     </div>
   );

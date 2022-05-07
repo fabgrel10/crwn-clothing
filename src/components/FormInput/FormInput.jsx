@@ -1,5 +1,6 @@
-const FormInput = ({ label, ...otherProps }) => {
-  return (
+import './FormInput.scss';
+
+const FormInput = ({ label, ...otherProps }) => (
     <div className="group">
       <input className="form-input" {...otherProps} />
       {label && (
@@ -13,6 +14,5 @@ const FormInput = ({ label, ...otherProps }) => {
       )}
     </div>
   );
-};
 
 export default FormInput;
