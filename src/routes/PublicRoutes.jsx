@@ -2,13 +2,13 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from '../components/Home/Home';
 import Navbar from '../components/Navbar/Navbar';
-import SignIn from './SignIn';
+import Authentication from './Authentication';
 
 const PublicRoutes = () => (
   <Routes>
     <Route path="/" element={<Navbar />}>
       <Route index element={<Home />} />
-      <Route path="/sign-in" element={<SignIn />} />
+      <Route path="/auth" element={<Authentication />} />
     </Route>
   </Routes>
 );
